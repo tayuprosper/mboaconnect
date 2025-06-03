@@ -46,7 +46,7 @@ useEffect( ()=>{
             default:
                 return (
                     <>
-                    <div className='flex m-6 gap-6'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 m-6'>
                         
                     <DashboardCards length={courses.length}/>
                     <DashboardCards length={courses.length}/>
