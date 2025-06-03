@@ -2,7 +2,13 @@ import React from 'react'
 import CoursesSearch from '../components/CoursesSearch'
 import AllCoursesList from '../components/AllCoursesList'
 import Navbar from '../commons/Navbar'
+import { useNavigate } from 'react-router-dom'
 function CoursesPage() {
+    const navigate = useNavigate();
+    const user = localStorage.getItem("token")
+    if(!user){
+        navigate("/login");
+    }
   return (
     <>
     <Navbar/>
