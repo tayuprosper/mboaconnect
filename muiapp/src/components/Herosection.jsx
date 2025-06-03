@@ -1,6 +1,7 @@
 import Button from '@mui/material/Button'
 import React from 'react'
 import { TrendingFlat } from '@mui/icons-material'
+import { Link } from 'react-router-dom'
 
 function Herosection() {
     return (
@@ -19,11 +20,11 @@ function Herosection() {
             </p>
 
             <div className="flex flex-col sm:flex-row w-full justify-center items-center gap-4 sm:gap-8">
-                <Button className="!border-2 !text-blue-700 !px-6 !py-2">LEARN MORE</Button>
-                <Button className="!bg-blue-700 !border-blue-700 !border-2 !font-bold !text-white !px-6 !py-2">
+                <Link to={"/features"}><Button className="!border-2 !text-blue-700 !px-6 !py-2">LEARN MORE</Button></Link>
+              <Link to={"/signup"} > <Button className="!bg-blue-700 !border-blue-700 !border-2 !font-bold !text-white !px-6 !py-2">
                     GET STARTED
                     <TrendingFlat className="ml-2" />
-                </Button>
+                </Button></Link>
             </div>
         </div>
     )
